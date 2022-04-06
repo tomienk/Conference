@@ -1,0 +1,43 @@
+@import "var.less";
+
+body {
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-decoration: none;
+
+    &-alt {
+        border: 1px solid #fff;
+        padding: 20px 30px;
+
+        &:hover {
+            background-color: @color-white;
+            color: @color-blue-green;
+        }
+    }
+
+    &-default {
+        border: 0;
+        background: #648880;
+        padding: 11px 30px;
+        font-size: 14px;
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}

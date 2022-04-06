@@ -1,0 +1,32 @@
+@import "var.less";
+
+.row-alt {
+    background: @color-bg-gradient;
+    margin: 0;
+    padding: 44px 0;
+    text-align: center;
+
+    .container {
+        width: 95%;
+        @media screen and (min-width: @mobile) {
+            width: 60%;
+        }
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-size: 36px;
+        line-height: 44px;
+        color: @color-blue-green;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 33px;
+        margin: 0 0 22px 0;
+        color: #888888;
+    }
+}

@@ -1,0 +1,45 @@
+@import "var.less";
+
+.footer {
+    background-color: @color-bg-blue;
+    padding: 44px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        @media screen and (min-width: @mobile) {
+            width: 60%;
+        }
+    }
+
+    p {
+        color: @color-blue-green;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px 0 0;
+        a {
+            text-decoration: none;
+            color: @color-white;
+            font-size: 14px;
+            margin: 0 10px;
+            font-weight: 300;
+            text-transform: inherit;
+
+            &:hover {
+                color: @color-blue-green;
+            }
+        }
+    }
+
+    .nav-footer-other-page {
+        a {
+            font-weight: 500;
+        }
+    }
+}

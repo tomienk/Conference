@@ -1,0 +1,128 @@
+@import "var.less";
+
+.header {
+    background-color: @color-bg-blue;
+    padding-bottom: 30px;
+
+    .header-second-title {
+        h1 {
+            font-weight: 400;
+        }
+    }
+    .container {
+        width: 100%;
+        @media screen and (min-width: @mobile) {
+            width: 60%;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: @tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+    }
+    h1 {
+        display: inline-block;
+        padding: 40px 0 22px 0;
+        margin: 0 30px 0 0;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 44px;
+        letter-spacing: 0.5px;
+        border-top: 4px solid @color-blue-green;
+        a {
+            text-decoration: none;
+            color: @color-white;
+
+            &:hover {
+                color: @color-blue-green;
+            }
+        }
+    }
+
+    .header-nav {
+        width: 100%;
+        @media screen and (min-width: @mobile) {
+            width: auto;
+        }
+        .header-nav-more {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+
+            @media screen and (min-width: @mobile) {
+                display: inline-block;
+                text-align: right;
+            }
+        }
+        
+
+        .second-title {
+            font-weight: 400;       
+        }
+
+        h3 {
+            color: @color-blue-green;
+            font-size: 21px;
+            font-weight: 300;
+        }
+
+        .menu {
+
+            @media screen and (min-width: @mobile) {
+                display: none;
+            }
+            i {
+                font-size: 24px;
+                color: @color-white;
+            }
+
+            .menu-ham {
+                cursor: pointer;
+                border: none;
+                background: transparent;
+            }
+        }
+
+        .nav-mobile-toggle {
+            display: none;
+            a {
+                text-align: center;
+                display: block;
+                text-decoration: none;
+                color: @color-white;
+                border-bottom: 1px solid #fff;
+                font-size: 16px;
+                padding: 15px 0px;
+
+                &:first-child {
+                    border-top: 1px solid #fff;
+                }
+            }
+        }
+    
+        .nav {
+            @media screen and (min-width: @mobile) {
+                display: flex;
+            }
+            margin: 0 -10px;
+            display: none;
+            flex-wrap: wrap;
+            a {
+                text-decoration: none;
+                color: @color-white;
+                font-size: 14px;
+                margin: 0 10px;
+
+                &:hover {
+                    color: @color-blue-green;
+                }
+            }
+        }
+    }
+}

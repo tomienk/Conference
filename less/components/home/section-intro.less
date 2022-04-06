@@ -1,0 +1,30 @@
+@import "../var.less";
+
+.section-intro {
+    background-color: @color-bg-blue;
+    text-align: center;
+    padding: 30px 0 70px 0;
+
+    .container {
+        @media screen and (min-width: @tablet) {
+            padding: 0 40px;
+        }
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 36px;
+        line-height: 44px;
+        color: @color-blue-green;
+        font-weight: 300;
+    }
+
+    p {
+        color: @color-white;
+        margin-top: 0;
+        line-height: 44px;
+        margin-bottom: 22px;
+        font-size: 24px;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,81 @@
+@import "../var.less";
+
+.section-people-info {
+    padding: 66px 0 44px 0;
+    .article-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: @tablet) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .article-item1 {
+            @media screen and (min-width: @tablet) {
+                flex: 1;
+            }
+            h2 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 44px;
+                color: @color-blue-green;
+            }
+
+            h5 {
+                margin: 0 0 22px 0;
+                color: @color-silver;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 0 0 22px 0;
+                color: #888;
+                font-weight: 500;
+            }
+        }
+
+        .article-item2 {
+            @media screen and (min-width: @tablet) {
+                margin: 88px 0 0 30px;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 280px;
+            height: 175px;
+            border: 1px solid #dfe2e5;
+            border-radius: 5px;
+            padding: 22px;
+            margin: 50px 0 50px 0;
+
+            img {
+                position: absolute;
+                top: -25%;
+                height: 130px;
+                width: 130px;
+                border-radius: 50%;
+            }
+
+            a {
+                position: absolute;
+                text-decoration: none;
+                font-weight: 500;
+                color: @color-blue-green;
+                top: 110px;
+
+                &:last-child {
+                    top: 130px;
+                }
+
+                &:hover {
+                    color: #a9b2b9;
+                }
+            }
+        }
+    }
+}
